@@ -9,6 +9,18 @@
     * {
       margin: 8px 4px;
     }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main, section {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
   </style>
 </head>
 
@@ -19,70 +31,37 @@
     </nav>
   </header>
 
-  <img src="Imagens/Logo.jpg" alt=" " />
+  <main>
+    <!-- indica que é o conteúdo principal dessa página -->
 
-  <h1>Inscreva-se</h1>
+    <section>
+        <!-- indica que é um conteúdo a parte do princial, auxiliar-->
+        <h1>Acontece no IFSP</h1>
+            <img id="astronauta" src="Imagens/SEJA_RARO.jpg" alt="Palestra Seja Raro" width="560" height="316">
+            <p>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</p>
+    </section>
 
-  <form name="evento">
-    <fieldset>
-      Evento
-      <select name="evento" required>
-        <option value="">-- Selecione --</option>
-        <option value="voe">Voe sem asas</option>
-        <option value="festa">Festa junina</option>
-        <option value="semana">Semana de tecnologia</option>
-      </select>
-    </fieldset>
 
-    <fieldset name="Informações de Acesso">
-      <legend>Informações de Acesso</legend>
-      <div>
-        Usuário <input type="text" placeholder="Usuario" required>
-      </div>
-      <div>
-        Senha <input type="password" placeholder="Senha" required>
-      </div>
-      <div>
-        Confirme a senha <input type="text" placeholder="Confirma a senha" required>
-      </div>
-    </fieldset>
+    
+    <section>
+        <h1>
+            Conheça os desafios de inovação
+        </h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
 
-    <fieldset name="Informações Pessoais">
-      <legend>Informações Pessoais</legend>
-      <div>
-        Nome Completo <input type="text" placeholder="Nome completo" required>
-      </div>
-      <div>
-        E-mail <input type="email" placeholder="Email" required>
-      </div>
-      <div>
-        Celular <input type="tel" placeholder="(00) 00000-0000" required> (99) 99999-9999
-      </div>
+  </main>
 
-      <fieldset>
-        <legend>Sexo</legend>
-        <div>
-          <label for="masc">Masculino</label>
-          <input type="radio" name="sexo" value="masc" id="masc">
-          <label for="masc">Feminino</label>
-          <input type="radio" name="sexo" value="Feminino" id="Feminino">
-        </div>
-      </fieldset>
-
-      <div>
-        Data de Nascimento <input type="date" required>
-      </div>
-
-      <div>
-        Cor favorita <input type="color" required>
-      </div>
-
-      Perfil no Github <input type="url" placeholder="https://github.com/usuario" required>
-    </fieldset>
-
-    <button type="submit" form="evento">Inscrever</button>
-    <input type="reset" value="Limpar" />
-  </form>
+<footer>
+    <br><br>
+    <div id="my_menu" align="left">
+        <a href="#cabecalho"><img src="Imagens/MoveTop.png" width="41" height="43" title="Mover para o topo" alt="Mover para o topo"></a> |
+        <a href="https://www.facebook.com/ifsppirituba"><img src="Imagens/facebook.png" width="41" height="43" title="IFSP Facebook" alt="IFSP Facebook"></a>
+    </div>
+    <p>
+        IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
+    </p>
+</footer>
 </body>
 
 </html>
